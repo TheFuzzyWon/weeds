@@ -155,7 +155,7 @@ body {
 
 .hero__wordmark {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(2rem, 6vw, 3rem);
+  font-size: clamp(2rem, 6vw, 6rem);
   letter-spacing: 0.06em;
   margin: 0.25rem 0 0.5rem;
   color: var(--navy);
