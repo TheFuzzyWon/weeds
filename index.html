@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Weeds the People — a new cannabis brand coming to Washington State, Fall 2026.">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="Weeds the People">
+  <meta property="og:description" content="Coming Fall 2026.">
+  <meta property="og:type" content="website">
+  <title>Weeds the People — Coming Fall 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Decorative background: drips + faded graffiti tags -->
+  <div class="bg-decor" aria-hidden="true">
+    <svg class="bg-decor__drips" viewBox="0 0 1200 220" preserveAspectRatio="none">
+      <g fill="#1c2a5e">
+        <path d="M40 0 H78 L74 90 Q70 110 59 110 Q48 110 44 90 Z"/>
+        <path d="M130 0 H160 L156 60 Q154 72 145 72 Q136 72 134 60 Z"/>
+        <path d="M210 0 H252 L248 140 Q244 162 231 162 Q218 162 214 140 Z"/>
+        <path d="M310 0 H336 L334 50 Q332 60 323 60 Q314 60 312 50 Z"/>
+        <path d="M390 0 H432 L428 110 Q424 128 411 128 Q398 128 394 110 Z"/>
+        <path d="M490 0 H516 L514 80 Q512 92 503 92 Q494 92 492 80 Z"/>
+        <path d="M580 0 H626 L622 170 Q618 195 603 195 Q588 195 584 170 Z"/>
+        <path d="M680 0 H708 L706 70 Q704 82 694 82 Q684 82 682 70 Z"/>
+        <path d="M760 0 H802 L798 130 Q794 150 781 150 Q768 150 764 130 Z"/>
+        <path d="M860 0 H888 L886 55 Q884 66 874 66 Q864 66 862 55 Z"/>
+        <path d="M940 0 H982 L978 105 Q974 122 961 122 Q948 122 944 105 Z"/>
+        <path d="M1040 0 H1068 L1066 75 Q1064 87 1054 87 Q1044 87 1042 75 Z"/>
+        <path d="M1110 0 H1152 L1148 155 Q1144 178 1131 178 Q1118 178 1114 155 Z"/>
+      </g>
+    </svg>
+
+    <!-- Scattered tag motifs -->
+    <svg class="bg-decor__tag bg-decor__tag--1" viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M50 8 L61 38 L93 38 L67 58 L77 90 L50 70 L23 90 L33 58 L7 38 L39 38 Z"
+            fill="none" stroke="#1c2a5e" stroke-width="6" stroke-linejoin="round"/>
+    </svg>
+    <svg class="bg-decor__tag bg-decor__tag--2" viewBox="0 0 120 80" aria-hidden="true">
+      <path d="M10 60 L25 20 L40 50 L60 15 L80 50 L95 20 L110 60 Z"
+            fill="none" stroke="#1c2a5e" stroke-width="6" stroke-linejoin="round"/>
+      <circle cx="25" cy="14" r="5" fill="#1c2a5e"/>
+      <circle cx="60" cy="9" r="5" fill="#1c2a5e"/>
+      <circle cx="95" cy="14" r="5" fill="#1c2a5e"/>
+    </svg>
+    <svg class="bg-decor__tag bg-decor__tag--3" viewBox="0 0 120 60" aria-hidden="true">
+      <path d="M5 30 L95 30 M75 10 L105 30 L75 50"
+            fill="none" stroke="#1c2a5e" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+    </svg>
+    <svg class="bg-decor__tag bg-decor__tag--4" viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M50 10 L50 90 M10 50 L90 50 M22 22 L78 78 M78 22 L22 78"
+            stroke="#1c2a5e" stroke-width="5" stroke-linecap="round"/>
+    </svg>
+    <svg class="bg-decor__tag bg-decor__tag--5" viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M50 8 L61 38 L93 38 L67 58 L77 90 L50 70 L23 90 L33 58 L7 38 L39 38 Z"
+            fill="#1c2a5e"/>
+    </svg>
+    <svg class="bg-decor__tag bg-decor__tag--6" viewBox="0 0 120 80" aria-hidden="true">
+      <path d="M10 60 L25 20 L40 50 L60 15 L80 50 L95 20 L110 60 Z"
+            fill="none" stroke="#1c2a5e" stroke-width="6" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <!-- Age gate -->
+  <div id="age-gate" class="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title">
+    <div class="age-gate__inner">
+      <img src="wtp-spray-paint.svg" alt="" class="age-gate__logo" aria-hidden="true">
+      <h1 id="age-gate-title" class="age-gate__title">Are you 21 or older?</h1>
+      <p class="age-gate__sub">You must be of legal age to enter this site.</p>
+      <div class="age-gate__buttons">
+        <button type="button" class="btn btn--primary" id="age-yes">Yes, I am 21+</button>
+        <button type="button" class="btn btn--ghost" id="age-no">No</button>
+      </div>
+      <p class="age-gate__fine">
+        By entering you confirm you are at least 21 years of age and agree to our use of cookies.
+        Cannabis has intoxicating effects. For use only by adults 21 and older.
+        Keep out of reach of children.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main site -->
+  <main id="site" class="site" hidden>
+    <section class="hero">
+      <img src="WTP spray paint.svg" alt="Weeds the People" class="hero__logo">
+      <h1 class="hero__wordmark">Weeds the People</h1>
+      <p class="hero__tagline">Award-winning cultivation. Original genetics. Straight to the people.</p>
+      <p class="hero__date">Coming Fall 2026.</p>
+
+      <form id="signup" class="signup" novalidate>
+        <label for="email" class="sr-only">Email address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="your@email.com"
+          autocomplete="email"
+          class="signup__input">
+        <button type="submit" class="btn btn--primary signup__button">Notify me</button>
+        <p class="signup__msg" id="signup-msg" role="status" aria-live="polite"></p>
+      </form>
+
+      <section class="feed" aria-labelledby="feed-title">
+        <h2 id="feed-title" class="feed__title">Follow along</h2>
+        <!--
+          Static thumbnail grid. Drop 6 square JPGs into the /ig folder
+          named 1.jpg through 6.jpg (suggested size: 600x600).
+          Every tile links to the IG profile.
+        -->
+        <div class="ig-grid">
+          <a class="ig-grid__tile" href="https://instagram.com/weedsthepeople" target="_blank" rel="noopener noreferrer" aria-label="Open @weedsthepeople on Instagram">
+            <img src="ig/1.jpg" alt="" loading="lazy">
+          </a>
+          <a class="ig-grid__tile" href="https://instagram.com/weedsthepeople" target="_blank" rel="noopener noreferrer" aria-label="Open @weedsthepeople on Instagram">
+            <img src="ig/2.jpg" alt="" loading="lazy">
+          </a>
+          <a class="ig-grid__tile" href="https://instagram.com/weedsthepeople" target="_blank" rel="noopener noreferrer" aria-label="Open @weedsthepeople on Instagram">
+            <img src="ig/3.jpg" alt="" loading="lazy">
+          </a>
+          <a class="ig-grid__tile" href="https://instagram.com/weedsthepeople" target="_blank" rel="noopener noreferrer" aria-label="Open @weedsthepeople on Instagram">
+            <img src="ig/4.jpg" alt="" loading="lazy">
+          </a>
+          <a class="ig-grid__tile" href="https://instagram.com/weedsthepeople" target="_blank" rel="noopener noreferrer" aria-label="Open @weedsthepeople on Instagram">
+            <img src="ig/5.jpg" alt="" loading="lazy">
+          </a>
+          <a class="ig-grid__tile" href="https://instagram.com/weedsthepeople" target="_blank" rel="noopener noreferrer" aria-label="Open @weedsthepeople on Instagram">
+            <img src="ig/6.jpg" alt="" loading="lazy">
+          </a>
+        </div>
+      </section>
+
+      <a class="ig-link" href="https://instagram.com/weedsthepeople" target="_blank" rel="noopener noreferrer">
+        <svg class="ig-link__icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38a3.7 3.7 0 0 1-1.38.9c-.42.16-1.06.36-2.23.41-1.25.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.52 0-4.76.07-1.07.05-1.65.23-2.04.38-.51.2-.88.44-1.27.83-.39.39-.63.76-.83 1.27-.15.39-.33.97-.38 2.04C2.65 8.48 2.64 8.85 2.64 12s.01 3.52.08 4.76c.05 1.07.23 1.65.38 2.04.2.51.44.88.83 1.27.39.39.76.63 1.27.83.39.15.97.33 2.04.38 1.24.07 1.61.08 4.76.08s3.52-.01 4.76-.08c1.07-.05 1.65-.23 2.04-.38.51-.2.88-.44 1.27-.83.39-.39.63-.76.83-1.27.15-.39.33-.97.38-2.04.07-1.24.08-1.61.08-4.76s-.01-3.52-.08-4.76c-.05-1.07-.23-1.65-.38-2.04a3.4 3.4 0 0 0-.83-1.27 3.4 3.4 0 0 0-1.27-.83c-.39-.15-.97-.33-2.04-.38C15.52 4 15.15 4 12 4zm0 3.06A4.94 4.94 0 1 1 7.06 12 4.94 4.94 0 0 1 12 7.06zm0 8.14A3.2 3.2 0 1 0 8.8 12 3.2 3.2 0 0 0 12 15.2zm5.13-8.34a1.15 1.15 0 1 1-1.15-1.15 1.15 1.15 0 0 1 1.15 1.15z"/>
+        </svg>
+        <span>@weedsthepeople</span>
+      </a>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__warning">
+        <strong>21+ only.</strong>
+        This product has intoxicating effects and may be habit forming.
+        For use only by adults twenty-one and older. Keep out of the reach of children.
+      </p>
+      <p class="footer__meta">
+        WSLCB License #: <span class="footer__license">417107</span>
+        &nbsp;·&nbsp;
+        © <span id="year"></span> Weeds the People
+      </p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
