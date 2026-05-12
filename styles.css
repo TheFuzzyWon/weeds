@@ -280,32 +280,9 @@ body {
   text-align: center;
 }
 
-.ig-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
-}
-
-.ig-grid__tile {
-  position: relative;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  background: var(--navy);
-  display: block;
-  transition: transform 0.15s ease;
-}
-.ig-grid__tile:hover { transform: scale(1.02); }
-.ig-grid__tile img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: opacity 0.15s ease;
-}
-.ig-grid__tile:hover img { opacity: 0.82; }
-
-@media (max-width: 480px) {
-  .ig-grid { grid-template-columns: repeat(2, 1fr); }
+.ig-embed {
+  display: flex;
+  justify-content: center;
 }
 
 /* ---------- Background decor ---------- */
