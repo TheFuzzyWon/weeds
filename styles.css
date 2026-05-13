@@ -322,8 +322,14 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: clamp(140px, 18vh, 220px);
+  height: 140px;
   opacity: 0.18;
+  background-image: url(drips.svg);
+  background-repeat: repeat-x;
+  background-position: top left;
+  /* Fixed tile size — drips render at the same pixel size on every screen.
+     Tile is 400px wide, so a 1600px desktop shows ~4 repetitions. */
+  background-size: 400px 140px;
 }
 
 .bg-decor__tag {
